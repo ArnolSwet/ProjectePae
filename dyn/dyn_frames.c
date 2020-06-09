@@ -13,6 +13,7 @@
 
 #include "hal_dyn_uart/hal_dyn_uart_emu.h"
 #include "fake_msp.h"
+#include <stdio.h>
 
 #define f_TxUAC2 TxUAC2_emu
 #define f_Sentit_Dades_Tx Sentit_Dades_Tx_emu
@@ -31,7 +32,7 @@
 
 #endif
 
-//TxPacket()  3 paràmetres: ID del Dynamixel, Mida dels paràmetres, Instruction byte. torna la mida del "Return packet"
+//TxPacket()  3 parï¿½metres: ID del Dynamixel, Mida dels parï¿½metres, Instruction byte. torna la mida del "Return packet"
 byte TxPacket(byte bID, byte bParameterLength, byte bInstruction,
               const byte *Parametros) {
     byte bCount, bCheckSum, bPacketLength;
@@ -39,40 +40,41 @@ byte TxPacket(byte bID, byte bParameterLength, byte bInstruction,
     f_Sentit_Dades_Tx();  //El pin P3.0 (DIRECTION_PORT) el posem a 1 (Transmetre)
     TxBuffer[0] = 0xff;    //Primers 2 bytes que indiquen inici de trama FF, FF.
     TxBuffer[1] = 0xff;
-    TxBuffer[2] = bID;         //ID del mòdul al que volem enviar el missatge
+    TxBuffer[2] = bID;         //ID del mï¿½dul al que volem enviar el missatge
     TxBuffer[3] = bParameterLength + 2; //Length(Parameter,Instruction,Checksum)
-    TxBuffer[4] = bInstruction;    //Instrucció que enviem al Mòdul
+    TxBuffer[4] = bInstruction;    //Instrucciï¿½ que enviem al Mï¿½dul
 
-    //TODO: La instrucció no ha de poder modificar les primeres 5 posicions de memoria
+    //TODO: La instrucciï¿½ no ha de poder modificar les primeres 5 posicions de memoria
 
-    for (bCount = 0; bCount < bParameterLength; bCount++) //Comencem a generar la trama que hem d’enviar
+    for (bCount = 0; bCount < bParameterLength; bCount++) //Comencem a generar la trama que hem dï¿½enviar
     {
         TxBuffer[bCount + 5] = Parametros[bCount];
     }
     bCheckSum = 0;
     bPacketLength = bParameterLength + 4 + 2;
-    for (bCount = 2; bCount < bPacketLength - 1; bCount++) //Càlcul del checksum
+    for (bCount = 2; bCount < bPacketLength - 1; bCount++) //Cï¿½lcul del checksum
     {
         bCheckSum += TxBuffer[bCount];
     }
     TxBuffer[bCount] = ~bCheckSum;         //Escriu el Checksum (complement a 1)
-    for (bCount = 0; bCount < bPacketLength; bCount++) //Aquest bucle és el que envia la trama al Mòdul Robot
+    for (bCount = 0; bCount < bPacketLength; bCount++) //Aquest bucle ï¿½s el que envia la trama al Mï¿½dul Robot
     {
         while (!(UCA2IFG & UCTXIFG));
         f_TxUAC2(TxBuffer[bCount]);
     }
     while ((UCA2STATW & UCBUSY)) {
-    };   //Espera fins que s’ha transmès el últim byte
-    f_Sentit_Dades_Rx(); //Posem la línia de dades en Rx perquè el mòdul Dynamixel envia resposta
+    };   //Espera fins que sï¿½ha transmï¿½s el ï¿½ltim byte
+    f_Sentit_Dades_Rx(); //Posem la lï¿½nia de dades en Rx perquï¿½ el mï¿½dul Dynamixel envia resposta
     return (bPacketLength);
 }
 
 struct RxReturn RxPacket(void) {
     struct RxReturn respuesta;
-    byte bCount;
+    byte bCount, bCheckSum, bPacketLength;
 
     respuesta.time_out = false;
     respuesta.idx = 0;
+    respuesta.tx_err = false;
     //f_Sentit_Dades_Rx();   //Ponemos la linea half duplex en Rx
     //f_Activa_Timer_TimeOut();
     for (bCount = 0; bCount < 4; bCount++) {
@@ -84,7 +86,23 @@ struct RxReturn RxPacket(void) {
         } //fin del for
     }
     //TODO: Decode packet and verify checksum
+    bCheckSum = 0;
+    // Un cop hem llegit el paquet, hem de calcular el CheckSum. Treiem els dos primers bytes que marquen l'inici de trama d'instrucciÃ³ i no calculem l'Ãºltim perquÃ¨ Ã©s el Cheksum
+    for (bCount = 2 ; bCount<bPacketLength -1 ; bCount ++) {
+        // Sumem sobre la variable CheckSum
+        bCheckSum += respuesta.StatusPacket[bCount];
+    }
+    bCheckSum = ~bCheckSum;
 
+    //Comprovem que el Checksum calculat sigui el mateix que el que hem guardat en el StatusPacket calculat en la funciÃ³ de transmissiÃ³
+    if (bCheckSum != respuesta.StatusPacket[bPacketLength - 1]) {
+
+        // Si el CheckSum no Ã©s el mateix, vol dir que tenim un error.
+        respuesta.tx_err = true;
+    }else {
+        // Tot, funciona perfectament. Retornem la resposta.
+        printf("\n ****** Checksum OK ****** \n");
+    }
     return respuesta;
 }
 

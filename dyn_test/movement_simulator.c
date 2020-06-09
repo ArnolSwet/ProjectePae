@@ -1,7 +1,7 @@
 /*
  * movement_simulator.c
  *
- *  Created on: 16 d’abr. 2020
+ *  Created on: 16 dï¿½abr. 2020
  *      Author: droma
  */
 
@@ -227,6 +227,6 @@ void check_simulation_end() {
 void end_simulator() {
     simulator_finished = true;
     fclose(fichero);
-    pthread_exit(NULL);
+    //pthread_exit(NULL);
 }
 
