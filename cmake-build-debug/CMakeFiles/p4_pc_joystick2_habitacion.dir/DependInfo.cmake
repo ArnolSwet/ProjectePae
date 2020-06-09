@@ -4,23 +4,24 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_common.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_sensor.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_frames.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_instr.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/b_queue.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/dyn_emu.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/movement_simulator.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart/hal_dyn_uart_emu.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/joystick_emu/joystick.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/main.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.o"
-  "/Users/xilmlr/CLionProjects/ProjectePae/posicion.c" "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.o"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn/dyn_app_common.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn/dyn_app_sensor.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn/dyn_frames.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn/dyn_instr.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn_test/b_queue.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn_test/dyn_emu.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/dyn_test/movement_simulator.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/hal_dyn_uart/hal_dyn_uart_emu.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/joystick_emu/joystick.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/main.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj"
+  "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/posicion.c" "E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../../../CLionProjects/ProjectePae"
+  "../../ProjectePae"
   "../dyn"
   "../dyn_test"
   "../hal_dyn_uart"
