@@ -1,8 +1,8 @@
-# Install script for directory: E:/UB Segon/2n Sem/Programació Arquitectures Enquestades/ProjectePae
+# Install script for directory: /Users/xilmlr/CLionProjects/ProjectePae
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/p4_pc_joystick2_habitacion")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/UB Segon/2n Sem/Programació Arquitectures Enquestades/ProjectePae/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
