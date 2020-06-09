@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
+SET (CMAKE_C_COMPILER_WORKS 1)
+SET (CMAKE_CXX_COMPILER_WORKS 1)
 project(p4_pc_joystick2_habitacion C)
-
-set(CMAKE_C_STANDARD 11)
 
 include_directories("../../CLionProjects/ProjectePae")
 include_directories(dyn)

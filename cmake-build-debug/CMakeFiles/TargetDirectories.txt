@@ -1,3 +1,3 @@
-/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir
+E:/UB Segon/2n Sem/Programació Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/p4_pc_joystick2_habitacion.dir
+E:/UB Segon/2n Sem/Programació Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/UB Segon/2n Sem/Programació Arquitectures Enquestades/ProjectePae/cmake-build-debug/CMakeFiles/rebuild_cache.dir
