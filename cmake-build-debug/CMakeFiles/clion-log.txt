@@ -1,4 +1,9 @@
-"D:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/xilmlr/CLionProjects/ProjectePae
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/UB Segon/2n Sem/Programacio Arquitectures Enquestades/ProjectePae/cmake-build-debug
+-- Build files have been written to: /Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug
