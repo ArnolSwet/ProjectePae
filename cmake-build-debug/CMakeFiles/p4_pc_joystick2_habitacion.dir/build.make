@@ -42,10 +42,10 @@ RM = "D:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae"
+CMAKE_SOURCE_DIR = "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/p4_pc_joystick2_habitacion.dir/depend.make
@@ -59,156 +59,156 @@ include CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj: ../dyn/dyn_app_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_common.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_common.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_common.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj: ../dyn/dyn_app_sensor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_app_sensor.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_app_sensor.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj: ../dyn/dyn_frames.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_frames.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_frames.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_frames.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj: ../dyn/dyn_instr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_instr.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn\dyn_instr.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn\dyn_instr.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj: ../dyn_test/b_queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/b_queue.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\b_queue.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\b_queue.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj: ../dyn_test/dyn_emu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/dyn_emu.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\dyn_emu.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\dyn_emu.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj: ../dyn_test/movement_simulator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn_test/movement_simulator.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\dyn_test\movement_simulator.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\dyn_test\movement_simulator.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj: ../hal_dyn_uart/hal_dyn_uart_emu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\hal_dyn_uart\hal_dyn_uart_emu.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\hal_dyn_uart\hal_dyn_uart_emu.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj: ../joystick_emu/joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/joystick_emu/joystick.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\joystick_emu\joystick.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\joystick_emu\joystick.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\main.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\main.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\main.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/main.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\main.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\main.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\main.c.s
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/flags.make
 CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj: CMakeFiles/p4_pc_joystick2_habitacion.dir/includes_C.rsp
 CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj: ../posicion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.obj   -c "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\posicion.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.obj"
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.obj   -c "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\posicion.c"
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.i"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\posicion.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.i
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\posicion.c" > CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.i
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4_pc_joystick2_habitacion.dir/posicion.c.s"
-	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\posicion.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.s
+	"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\posicion.c" -o CMakeFiles\p4_pc_joystick2_habitacion.dir\posicion.c.s
 
 # Object files for target p4_pc_joystick2_habitacion
 p4_pc_joystick2_habitacion_OBJECTS = \
@@ -242,7 +242,7 @@ p4_pc_joystick2_habitacion.exe: CMakeFiles/p4_pc_joystick2_habitacion.dir/build.
 p4_pc_joystick2_habitacion.exe: CMakeFiles/p4_pc_joystick2_habitacion.dir/linklibs.rsp
 p4_pc_joystick2_habitacion.exe: CMakeFiles/p4_pc_joystick2_habitacion.dir/objects1.rsp
 p4_pc_joystick2_habitacion.exe: CMakeFiles/p4_pc_joystick2_habitacion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable p4_pc_joystick2_habitacion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable p4_pc_joystick2_habitacion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\p4_pc_joystick2_habitacion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -255,6 +255,6 @@ CMakeFiles/p4_pc_joystick2_habitacion.dir/clean:
 .PHONY : CMakeFiles/p4_pc_joystick2_habitacion.dir/clean
 
 CMakeFiles/p4_pc_joystick2_habitacion.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae" "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae" "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug" "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug" "E:\UB Segon\2n Sem\Programació Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles\p4_pc_joystick2_habitacion.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug" "E:\UB Segon\2n Sem\Programacio Arquitectures Enquestades\ProjectePae\cmake-build-debug\CMakeFiles\p4_pc_joystick2_habitacion.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/p4_pc_joystick2_habitacion.dir/depend
 
