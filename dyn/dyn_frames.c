@@ -44,7 +44,6 @@ byte TxPacket(byte bID, byte bParameterLength, byte bInstruction,
     TxBuffer[3] = bParameterLength + 2; //Length(Parameter,Instruction,Checksum)
     TxBuffer[4] = bInstruction;    //Instrucci� que enviem al M�dul
 
-    //TODO: La instrucci� no ha de poder modificar les primeres 5 posicions de memoria
 
     for (bCount = 0; bCount < bParameterLength; bCount++) //Comencem a generar la trama que hem d�enviar
     {
@@ -85,7 +84,6 @@ struct RxReturn RxPacket(void) {
             f_rx_uart_byte(&respuesta);
         } //fin del for
     }
-    //TODO: Decode packet and verify checksum
     bCheckSum = 0;
     // Un cop hem llegit el paquet, hem de calcular el CheckSum. Treiem els dos primers bytes que marquen l'inici de trama d'instrucció i no calculem l'últim perquè és el Cheksum
     for (bCount = 2 ; bCount<bPacketLength -1 ; bCount ++) {
