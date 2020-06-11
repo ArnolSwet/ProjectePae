@@ -8,7 +8,7 @@
  *
  */
 
-void distance_wall_front(void) {
+int distance_wall_front(void) {
 
 }
 

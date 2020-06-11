@@ -3,6 +3,8 @@
 #include <assert.h>
 #include "posicion.h"
 #include <stdio.h>
+#include <dyn/dyn_app_motor.h>
+#include <dyn/dyn_app_sensor.h>
 
 #include "main.h"
 #include "dyn/dyn_app_common.h"
@@ -71,6 +73,14 @@ int main(void) {
                     printf("\n");
                     break;
                 case Up:
+                    while(!simulator_finished) {
+                        move_forward();
+                        if (distance_wall_front() > 10) {
+                            move_left();
+                        } else {
+                            move_right();
+                        }
+                    }
 
                     break;
                 case Down:
