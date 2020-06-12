@@ -113,7 +113,11 @@ int main(void) {
                     printf("(4095, 4095): %d (esquina)\n", obstaculo(4095, 4095, datos_habitacion));
                     break;
                 case Center:
-
+                    init_movement_simulator(datos_habitacion);
+                    while(!simulator_finished) {
+                        move_forward();
+                        move_right();
+                    }
                     break;
                 case Quit:
                     printf("Adios!\n");
