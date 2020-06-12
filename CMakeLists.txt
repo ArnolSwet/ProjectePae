@@ -35,6 +35,8 @@ add_executable(p4_pc_joystick2_habitacion
         hal_dyn_uart/fake_msp.h
         joystick_emu/joystick.c
         joystick_emu/joystick.h
+        plot_movement.bat
+        plot_movement.py
         habitacion_001.h
         main.c
         main.h
