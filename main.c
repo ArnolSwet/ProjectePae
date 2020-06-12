@@ -32,6 +32,7 @@ int main(void) {
     pthread_create(&tid, NULL, dyn_emu, (void *) datos_habitacion);
     pthread_create(&jid, NULL, joystick_emu, (void *) &jid);
 
+    /*
     //Testing some high level function
     printf("\nSetting LED to 0 \n");
     dyn_led_control(1, 0);
@@ -43,6 +44,7 @@ int main(void) {
     printf("\nGetting LED value \n");
     dyn_led_read(1, &tmp);
     assert(tmp == 1);
+     */
 
     printf("\n************************\n");
     printf("Test passed successfully\n");
@@ -84,7 +86,7 @@ int main(void) {
 
                     break;
                 case Down:
-
+                    init_movement_simulator(datos_habitacion);
                     break;
                 case Left:
                     //Comprobaremos si detectamos las esquinas de la pared izquierda:
