@@ -3,19 +3,19 @@
 //
 
 #include "dyn_app_motor.h"
-#include "../../../Downloads/PAE_ArnauCirera_JoelBolwijn_Practica4/PAE_ArnauCirera_JoelBolwijn_Practica4/dyn/dyn_frames.h"
-#include "../../../Downloads/PAE_ArnauCirera_JoelBolwijn_Practica4/PAE_ArnauCirera_JoelBolwijn_Practica4/dyn/dyn_instr.h"
+#include "dyn/dyn_frames.h"
+#include "dyn/dyn_instr.h"
 
 uint16_t speed = 0x1FF; //Declarem una variable speed amb una velocitat mitja qualsevol
-bool direction_forward; //Declarem un boleà que indiqui la direcció que volem (true: endavant, false: endarrere)
+bool direction_backward; //Declarem un boleà que indiqui la direcció que volem (true: endavant, false: endarrere)
 uint8_t motor_L; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_L
 uint8_t motor_H; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H
 uint8_t motor_H_2; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H pel motor 2 en els moviments laterals
 
 void move_forward(void) {
 
-    direction_forward = true; // Declarem la direcció com a true(moviment endavant)
-    uint8_t direction = (uint8_t) direction_forward; //Fem un cast al boleà direcció per utilitzar-lo com a un enter de 8 bits (true = 0x01, false = 0x00)
+    direction_backward = false; // Declarem la direcció com a true(moviment endavant)
+    uint8_t direction = (uint8_t) direction_backward; //Fem un cast al boleà direcció per utilitzar-lo com a un enter de 8 bits (true = 0x01, false = 0x00)
     motor_L = speed & 0xFF; //Definim els primers 8 bits del registre MOV_SPEED que contindran els primers 8 bits del valor speed (Per això a la variable speed la trunquem pels primers 8 bits)
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03); //Definim els 8 bits restants de MOV_SPEED (Per això el bit de la direcció el desplacem 2 bits a l'esquerra per deixar espai als 2 bits restants de speed que queden després de treure els 8 primers que ja hem passat, fent el desplaçament de 8 bits a la dreta)
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_L, motor_L); //Escribim al mòdul 0x01 (Motor esquerra) al registre MOV_SPEED_L el valor que li hem assignat
@@ -26,8 +26,8 @@ void move_forward(void) {
 
 void move_backward(void) {
     // El moviment enrere és exactament igual que el moviment endavant però al inici declarem la variable direcció com a false (sentit endarrere)
-    direction_forward = false;
-    uint8_t direction = (uint8_t) direction_forward;
+    direction_backward = true;
+    uint8_t direction = (uint8_t) direction_backward;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_L, motor_L);
@@ -58,8 +58,8 @@ void move_left(void) {
     // El moviment cap a l'esquerra el fem definint un motor en un sentit i l'altre en el sentit contrari.
     // Concretament el gir cap a l'esquerra es fa definint el motor esquerra (0x1) en direcció enrere (direction_forward = false)
     // i el motor dret (0x02) en direcció endavant (direction_forward)
-    direction_forward = false; // Declarem el sentit del primer motor (esquerra)
-    uint8_t direction = (uint8_t) direction_forward;
+    direction_backward = true; // Declarem el sentit del primer motor (esquerra)
+    uint8_t direction = (uint8_t) direction_backward;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
     motor_H_2 = ((motor_H + 0x04) & 0x07); //En aquesta variable el que fem és guardar el valor que li passarem a motor_H i invertir només el bit de sentit per passar-li al motor dret (0x02)
@@ -72,8 +72,8 @@ void move_left(void) {
 void move_right(void) {
     // El moviment cap a la dreta és exactament igual que el moviment a l'esquerra,
     // però en aquest cas el motor esquerra (0x01) girà cap endevant, i el motor dret (0x02) girarà cap enrera
-    direction_forward = true;
-    uint8_t direction = (uint8_t) direction_forward;
+    direction_backward = false;
+    uint8_t direction = (uint8_t) direction_backward;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
     motor_H_2 = ((motor_H + 0x04) & 0x07); //Invertim el bit de direcció de la mateixa manera que en move_left
