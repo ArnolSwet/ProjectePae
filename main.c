@@ -14,11 +14,12 @@
 #include "habitacion_001.h"
 
 uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
-uint32_t indice;
+uint8_t distanceWall;
 
 /**
  * main.c
  */
+
 int main(void) {
     pthread_t tid, jid;
     uint8_t tmp;
@@ -44,16 +45,16 @@ int main(void) {
     printf("\nGetting LED value \n");
     dyn_led_read(1, &tmp);
     assert(tmp == 1);
-     */
-
     printf("\n************************\n");
     printf("Test passed successfully\n");
+    */
 
     printf("\nDimensiones habitacion %d ancho x %d largo mm2\n", ANCHO, LARGO);
     printf("En memoria: %I64u B = %I64u MiB\n", sizeof(datos_habitacion), sizeof(datos_habitacion) >> 20);
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
     fflush(stdout);//	return 0;
+
 
     while (estado != Quit) {
         if (simulator_finished) {
@@ -75,18 +76,17 @@ int main(void) {
                     printf("\n");
                     break;
                 case Up:
-                    while(!simulator_finished) {
+                    // Boton a clicar para empezar el movimiento del robot.
+                    init_movement_simulator(datos_habitacion);
+                    while(!simulator_finished){
                         move_forward();
-                        if (distance_wall_front() > 10) {
-                            move_left();
-                        } else {
-                            move_right();
-                        }
                     }
-
+                    update_movement_simulator_values();
+                    distance_wall_front(&distanceWall);
+                    printf(distanceWall);
                     break;
                 case Down:
-                    init_movement_simulator(datos_habitacion);
+                    // Boton para parar el movimiento del robot en cualquier momento.
                     break;
                 case Left:
                     //Comprobaremos si detectamos las esquinas de la pared izquierda:
@@ -115,11 +115,6 @@ int main(void) {
                     printf("(4095, 4095): %d (esquina)\n", obstaculo(4095, 4095, datos_habitacion));
                     break;
                 case Center:
-                    init_movement_simulator(datos_habitacion);
-                    while(!simulator_finished) {
-                        move_forward();
-                        move_right();
-                    }
                     break;
                 case Quit:
                     printf("Adios!\n");
