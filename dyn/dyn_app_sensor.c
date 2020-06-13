@@ -10,6 +10,8 @@
 
 int distance_wall_front(void) {
 
+
+
 }
 
 

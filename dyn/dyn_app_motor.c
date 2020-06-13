@@ -6,7 +6,7 @@
 #include "dyn/dyn_frames.h"
 #include "dyn/dyn_instr.h"
 
-uint16_t speed = 0x1FF; //Declarem una variable speed amb una velocitat mitja qualsevol
+uint16_t speed = 0x3FE; //Declarem una variable speed amb una velocitat mitja qualsevol
 bool direction_backward; //Declarem un boleà que indiqui la direcció que volem (true: endavant, false: endarrere)
 uint8_t motor_L; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_L
 uint8_t motor_H; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H

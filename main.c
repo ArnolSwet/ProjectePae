@@ -116,10 +116,7 @@ int main(void) {
                     break;
                 case Center:
                     init_movement_simulator(datos_habitacion);
-                    while(!simulator_finished) {
-                        move_forward();
-                        move_right();
-                    }
+                    move_forward();
                     break;
                 case Quit:
                     printf("Adios!\n");
