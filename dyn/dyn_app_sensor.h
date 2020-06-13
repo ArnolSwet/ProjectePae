@@ -10,7 +10,7 @@
 
 #include <stdint.h>
 
-int distance_wall_front(void);
+void distance_wall_front(uint8_t *distance);
 
 
 #endif /* DYN_SENSOR_H_ */

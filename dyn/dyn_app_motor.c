@@ -13,7 +13,6 @@ uint8_t motor_H; //Definim la variable d'un byte que contindrà el valor del reg
 uint8_t motor_H_2; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H pel motor 2 en els moviments laterals
 
 void move_forward(void) {
-
     direction_backward = false; // Declarem la direcció com a true(moviment endavant)
     uint8_t direction = (uint8_t) direction_backward; //Fem un cast al boleà direcció per utilitzar-lo com a un enter de 8 bits (true = 0x01, false = 0x00)
     motor_L = speed & 0xFF; //Definim els primers 8 bits del registre MOV_SPEED que contindran els primers 8 bits del valor speed (Per això a la variable speed la trunquem pels primers 8 bits)
@@ -37,7 +36,6 @@ void move_backward(void) {
 }
 
 void go_faster(void) {
-
     if (speed < 0x39B) {
         speed += 0x64;
     }else if (speed > 0x39B) {
@@ -46,7 +44,6 @@ void go_faster(void) {
 }
 
 void go_slower(void) {
-
     if (speed > 0xC8) {
         speed -= 0x64;
     }else if (speed < 0xC8) {
