@@ -80,6 +80,13 @@ int main(void) {
                     init_movement_simulator(datos_habitacion);
                     while(!simulator_finished){
                         move_forward();
+                        distance_wall_front(&distanceWall);
+                        if (distanceWall < 0x10) {
+                            move_right();
+                        }else {
+                            move_left();
+                        }
+                        update_movement_simulator_values();
                     }
                     update_movement_simulator_values();
                     distance_wall_front(&distanceWall);
