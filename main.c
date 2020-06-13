@@ -14,18 +14,32 @@
 #include "habitacion_001.h"
 
 uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
-uint8_t distanceWall;
 
 /**
  * main.c
  */
 
 void recorrerHabitacio() {
-    init_movement_simulator(datos_habitacion);
-    move_forward();
-    update_movement_simulator_values();
+    uint8_t distanceWall;
+    while (!simulator_finished) {
+        move_forward();
+        move_forward();
+        move_forward();
+        update_movement_simulator_values();
+        distance_wall_front(&distanceWall);
+        printf("****************\n");
+        printf("%d", distanceWall);
+        printf("\n****************");
+        if (distanceWall < 0x20) {
+            move_right();
+        } else {
+            move_left();
+        }
+        update_movement_simulator_values();
+    }
+
+
     distance_wall_front(&distanceWall);
-    printf(distanceWall);
 
 }
 
@@ -63,7 +77,7 @@ int main(void) {
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
     fflush(stdout);//	return 0;
-
+    //recorrerHabitacio();
 
     while (estado != Quit) {
         if (simulator_finished) {
@@ -86,6 +100,7 @@ int main(void) {
                     break;
                 case Up:
                     // Boton a clicar para empezar el movimiento del robot.
+                    init_movement_simulator(datos_habitacion);
                     recorrerHabitacio();
                     break;
                 case Down:

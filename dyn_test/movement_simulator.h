@@ -13,9 +13,9 @@
 #include <time.h>
 
 #define SIM_STEP_MS_TIME 10
-#define MAX_SIM_STEPS 600
+#define MAX_SIM_STEPS 10000
 
-#define INITIAL_POS_X 50
+#define INITIAL_POS_X 20
 #define INITIAL_POS_Y 250
 #define INITIAL_POS_THETA M_PI_2
 

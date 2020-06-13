@@ -57,27 +57,29 @@ void move_left(void) {
     // i el motor dret (0x02) en direcció endavant (direction_forward)
     direction_backward = true; // Declarem el sentit del primer motor (esquerra)
     uint8_t direction = (uint8_t) direction_backward;
+    speed = 0x12C;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
-    motor_H_2 = ((motor_H + 0x04) & 0x07); //En aquesta variable el que fem és guardar el valor que li passarem a motor_H i invertir només el bit de sentit per passar-li al motor dret (0x02)
+    //motor_H_2 = ((motor_H + 0x04) & 0x07); //En aquesta variable el que fem és guardar el valor que li passarem a motor_H i invertir només el bit de sentit per passar-li al motor dret (0x02)
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_L, motor_L);
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_H, motor_H); //Al motor 0x01 (esquerra) li passem amb el bit de direcció a 0 (enrere)
-    dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
-    dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 1 (endavant)
+    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
+    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 1 (endavant)
 }
 
 void move_right(void) {
     // El moviment cap a la dreta és exactament igual que el moviment a l'esquerra,
     // però en aquest cas el motor esquerra (0x01) girà cap endevant, i el motor dret (0x02) girarà cap enrera
-    direction_backward = false;
+    direction_backward = true;
     uint8_t direction = (uint8_t) direction_backward;
+    speed = 0x12C;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
-    motor_H_2 = ((motor_H + 0x04) & 0x07); //Invertim el bit de direcció de la mateixa manera que en move_left
-    dyn_write_byte(0x01, DYN_REG__MOV_SPEED_L, motor_L);
-    dyn_write_byte(0x01, DYN_REG__MOV_SPEED_H, motor_H); //Al motor 0x01(esquerra) li passem amb el bit de direcció a 1 (endavant)
+    //motor_H_2 = ((motor_H + 0x04) & 0x07); //Invertim el bit de direcció de la mateixa manera que en move_left
     dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
-    dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 0 (enrere)
+    dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H); //Al motor 0x01(esquerra) li passem amb el bit de direcció a 1 (endavant)
+    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
+    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 0 (enrere)
 }
 
 void move_continuous(void) {

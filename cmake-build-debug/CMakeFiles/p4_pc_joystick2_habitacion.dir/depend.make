@@ -9,7 +9,6 @@ CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_motor.c.o: ../../../CLionP
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_motor.c.o: ../dyn/dyn_app_motor.c
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_motor.c.o: ../dyn/dyn_app_motor.h
 
-CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.o: ../../../CLionProjects/ProjectePae/dyn/dyn_frames.h
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.o: ../../../CLionProjects/ProjectePae/dyn/dyn_instr.h
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.o: ../dyn/dyn_app_sensor.c
 CMakeFiles/p4_pc_joystick2_habitacion.dir/dyn/dyn_app_sensor.c.o: ../dyn/dyn_app_sensor.h
