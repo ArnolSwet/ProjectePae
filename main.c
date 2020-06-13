@@ -20,6 +20,15 @@ uint8_t distanceWall;
  * main.c
  */
 
+void recorrerHabitacio() {
+    init_movement_simulator(datos_habitacion);
+    move_forward();
+    update_movement_simulator_values();
+    distance_wall_front(&distanceWall);
+    printf(distanceWall);
+
+}
+
 int main(void) {
     pthread_t tid, jid;
     uint8_t tmp;
@@ -77,20 +86,7 @@ int main(void) {
                     break;
                 case Up:
                     // Boton a clicar para empezar el movimiento del robot.
-                    init_movement_simulator(datos_habitacion);
-                    while(!simulator_finished){
-                        move_forward();
-                        distance_wall_front(&distanceWall);
-                        if (distanceWall < 0x10) {
-                            move_right();
-                        }else {
-                            move_left();
-                        }
-                        update_movement_simulator_values();
-                    }
-                    update_movement_simulator_values();
-                    distance_wall_front(&distanceWall);
-                    printf(distanceWall);
+                    recorrerHabitacio();
                     break;
                 case Down:
                     // Boton para parar el movimiento del robot en cualquier momento.

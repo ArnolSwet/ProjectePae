@@ -9,19 +9,26 @@
  */
 
 #include "dyn_app_sensor.h"
-#include "dyn/dyn_frames.h"
 #include "dyn/dyn_instr.h"
 
-
-uint8_t distanceRi;
-uint8_t distanceLe;
-
 void distance_wall_front(uint8_t *distance) {
+    // Funcio que retorna distancia a paret frontal mes propera
     dyn_read_byte(0x03,DYN_REG__IR_CENTER, distance);
-    /* No usem ara matiex
-    dyn_read_byte(0x03,DYN_REG__IR_LEFT, distanceRi);
-    dyn_read_byte(0x03,DYN_REG__IR_RIGHT, distanceLe);*/
 }
+
+void distance_wall_left(uint8_t *distance) {
+    // Funcio que retorna distancia a paret esquerra mes propera
+    dyn_read_byte(0x03,DYN_REG__IR_LEFT, distance);
+}
+
+void distance_wall_right(uint8_t *distance) {
+    // Funcio que retorna distancia a paret dreta mes propera
+    dyn_read_byte(0x03,DYN_REG__IR_RIGHT, distance);
+}
+
+
+
+
 
 
 
