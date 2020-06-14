@@ -20,27 +20,28 @@ uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
  */
 
 void recorrerHabitacio() {
-    uint8_t distanceWall;
+    uint8_t distanceWallLeft;
+    uint8_t distanceWallCenter;
+    uint8_t distanceWallRight;
     while (!simulator_finished) {
         move_forward();
-        move_forward();
-        move_forward();
         update_movement_simulator_values();
-        distance_wall_front(&distanceWall);
+        distance_wall_front(&distanceWallCenter);
         printf("****************\n");
-        printf("%d", distanceWall);
+        printf("%d", distanceWallCenter);
         printf("\n****************");
-        if (distanceWall < 0x20) {
+        if (distanceWallCenter < 0x20) {
             move_right();
         } else {
-            move_left();
+            distance_wall_left(&distanceWallLeft);
+            distance_wall_right(&distanceWallRight);
+            if (distanceWallLeft > 0x14) {
+                move_left();
+            }
+
         }
         update_movement_simulator_values();
     }
-
-
-    distance_wall_front(&distanceWall);
-
 }
 
 int main(void) {

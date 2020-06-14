@@ -6,13 +6,13 @@
 #include "dyn/dyn_frames.h"
 #include "dyn/dyn_instr.h"
 
-uint16_t speed = 0x3FE; //Declarem una variable speed amb una velocitat mitja qualsevol
+ //Declarem una variable speed amb una velocitat mitja qualsevol
 bool direction_backward; //Declarem un boleà que indiqui la direcció que volem (true: endavant, false: endarrere)
 uint8_t motor_L; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_L
 uint8_t motor_H; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H
-uint8_t motor_H_2; //Definim la variable d'un byte que contindrà el valor del registre MOV_SPEED_H pel motor 2 en els moviments laterals
 
 void move_forward(void) {
+    uint16_t speed = 0x3FE;
     direction_backward = false; // Declarem la direcció com a true(moviment endavant)
     uint8_t direction = (uint8_t) direction_backward; //Fem un cast al boleà direcció per utilitzar-lo com a un enter de 8 bits (true = 0x01, false = 0x00)
     motor_L = speed & 0xFF; //Definim els primers 8 bits del registre MOV_SPEED que contindran els primers 8 bits del valor speed (Per això a la variable speed la trunquem pels primers 8 bits)
@@ -24,6 +24,7 @@ void move_forward(void) {
 }
 
 void move_backward(void) {
+    uint16_t speed = 0x3FE;
     // El moviment enrere és exactament igual que el moviment endavant però al inici declarem la variable direcció com a false (sentit endarrere)
     direction_backward = true;
     uint8_t direction = (uint8_t) direction_backward;
@@ -34,7 +35,7 @@ void move_backward(void) {
     dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
     dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H);
 }
-
+/*
 void go_faster(void) {
     if (speed < 0x39B) {
         speed += 0x64;
@@ -50,36 +51,34 @@ void go_slower(void) {
         speed = 0x64;
     }
 }
+ */
 
 void move_left(void) {
     // El moviment cap a l'esquerra el fem definint un motor en un sentit i l'altre en el sentit contrari.
     // Concretament el gir cap a l'esquerra es fa definint el motor esquerra (0x1) en direcció enrere (direction_forward = false)
     // i el motor dret (0x02) en direcció endavant (direction_forward)
-    direction_backward = true; // Declarem el sentit del primer motor (esquerra)
+    direction_backward = false; // Declarem el sentit del primer motor (esquerra)
     uint8_t direction = (uint8_t) direction_backward;
-    speed = 0x12C;
+    uint16_t speed = 0x1F4;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
-    //motor_H_2 = ((motor_H + 0x04) & 0x07); //En aquesta variable el que fem és guardar el valor que li passarem a motor_H i invertir només el bit de sentit per passar-li al motor dret (0x02)
+
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_L, motor_L);
     dyn_write_byte(0x01, DYN_REG__MOV_SPEED_H, motor_H); //Al motor 0x01 (esquerra) li passem amb el bit de direcció a 0 (enrere)
-    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
-    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 1 (endavant)
+
 }
 
 void move_right(void) {
     // El moviment cap a la dreta és exactament igual que el moviment a l'esquerra,
     // però en aquest cas el motor esquerra (0x01) girà cap endevant, i el motor dret (0x02) girarà cap enrera
-    direction_backward = true;
+    direction_backward = false;
     uint8_t direction = (uint8_t) direction_backward;
-    speed = 0x12C;
+    uint16_t speed = 0x1F4;
     motor_L = speed & 0xFF;
     motor_H = ((direction<<2)&0x04)|((speed>>8)&0x03);
-    //motor_H_2 = ((motor_H + 0x04) & 0x07); //Invertim el bit de direcció de la mateixa manera que en move_left
     dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
     dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H); //Al motor 0x01(esquerra) li passem amb el bit de direcció a 1 (endavant)
-    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_L, motor_L);
-    //dyn_write_byte(0x02, DYN_REG__MOV_SPEED_H, motor_H_2); //Al motor 0x02 (dret) li passem amb el bit de direcció a 0 (enrere)
+
 }
 
 void move_continuous(void) {
