@@ -99,14 +99,17 @@ int main(void) {
                     printf("\n");
                     break;
                 case Up:
+                    printf("Boton Up ('i') apretado\n");
                     // Boton a clicar para empezar el movimiento del robot.
                     init_movement_simulator(datos_habitacion);
                     recorrerHabitacio();
                     break;
                 case Down:
-                    // Boton para parar el movimiento del robot en cualquier momento.
+                    printf("Boton Down ('m') apretado\n");
+
                     break;
                 case Left:
+                    printf("Boton Left ('j') apretado\n");
                     //Comprobaremos si detectamos las esquinas de la pared izquierda:
                     printf("Esquina inferior izquierda:\n");
                     printf("(1, 1): %d (fuera pared)\n", obstaculo(1, 1, datos_habitacion));
@@ -120,6 +123,7 @@ int main(void) {
                     printf("(0, 4095): %d (esquina)\n", obstaculo(0, 4095, datos_habitacion));
                     break;
                 case Right:
+                    printf("Boton Right ('l') apretado\n");
                     //Comprobaremos si detectamos las esquinas de la pared derecha:
                     printf("Esquina inferior derecha:\n");
                     printf("(4094, 1): %d (fuera pared)\n", obstaculo(4094, 1, datos_habitacion));
@@ -133,6 +137,7 @@ int main(void) {
                     printf("(4095, 4095): %d (esquina)\n", obstaculo(4095, 4095, datos_habitacion));
                     break;
                 case Center:
+                    printf("Boton Center ('k') apretado\n");
                     break;
                 case Quit:
                     printf("Adios!\n");
