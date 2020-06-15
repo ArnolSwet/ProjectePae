@@ -78,7 +78,6 @@ int main(void) {
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
     fflush(stdout);//	return 0;
-    //recorrerHabitacio();
 
     while (estado != Quit) {
         if (simulator_finished) {
