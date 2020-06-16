@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include <dyn/dyn_app_motor.h>
 #include <dyn/dyn_app_sensor.h>
-
-#include "main.h"
 #include "dyn/dyn_app_common.h"
 #include "dyn_test/dyn_emu.h"
 #include "dyn_test/b_queue.h"
@@ -21,39 +19,35 @@ uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
 
 /*
  * recorreHabitacio()
- *
- *
- * Aquest métode fa que el robot recorri una habitació seguint un algoritme que es repetix fins que s'aturi el simulador.
- * Consisteix en moure el robot inicialment endavant, i tot seguit llegueix el sensor de davant:
- *  - Si el sensor detecta una paret a una distància màxima de 20mm gira lleugerament cap a la dreta
- *  - Si no es detecta obstacle comprova la distància del sensor de l'esquerra, si a l'esquerra detecta un obstacle,
- *      voldrà dir que el robot està paral·lel a una paret, i no realitzarà cap gir, per seguir recte paral·lel a la paret.
- *      Si no hi ha un obstacle ni a davant ni a l'esquerra, realitzarà un gir a l'esquerra per anar a buscar una paret.
- *
- * Finalment s'actualitzen els moviments perquè es representi al simulador.
  */
-
 void recorrerHabitacio() {
+    // Definim les variables que usarem.
     uint8_t distanceWallLeft;
     uint8_t distanceWallCenter;
-    uint8_t distanceWallRight;
+    // Comencem Bucle-While
     while (!simulator_finished) {
+        // Comencem anant cap endavant.
         move_forward();
+        // Actualitzem el moviment dels simuladors i comprovem
+        // la distancia a una paret amb el sensor central.
         update_movement_simulator_values();
         distance_wall_front(&distanceWallCenter);
-        printf("****************\n");
-        printf("%d", distanceWallCenter);
-        printf("\n****************");
+        // Evaluem si el robot esta 0x20 (32 en decimal) casellas, llavors girem a la dreta.
         if (distanceWallCenter < 0x20) {
+            // Si tenim una paret davant, girem la orientació del robot cap a la dreta.
             move_right();
         } else {
+            // En cas contrari, evaluem la distancia a un obstacle del sensor esquerre.
             distance_wall_left(&distanceWallLeft);
-            distance_wall_right(&distanceWallRight);
+            // Si aquesta distancia es inferior  a 0x14 (29 en decimal), llavors girem
+            // lleugermanet a la esquerra. Daquesta manera aconseguim quedarnos al costat
+            // de una paret.
             if (distanceWallLeft > 0x14) {
                 move_left();
             }
 
         }
+        // Per últim, tornem a actualitzar el valor dels sensors.
         update_movement_simulator_values();
     }
 }
