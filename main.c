@@ -19,6 +19,20 @@ uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
  * main.c
  */
 
+/*
+ * recorreHabitacio()
+ *
+ *
+ * Aquest métode fa que el robot recorri una habitació seguint un algoritme que es repetix fins que s'aturi el simulador.
+ * Consisteix en moure el robot inicialment endavant, i tot seguit llegueix el sensor de davant:
+ *  - Si el sensor detecta una paret a una distància màxima de 20mm gira lleugerament cap a la dreta
+ *  - Si no es detecta obstacle comprova la distància del sensor de l'esquerra, si a l'esquerra detecta un obstacle,
+ *      voldrà dir que el robot està paral·lel a una paret, i no realitzarà cap gir, per seguir recte paral·lel a la paret.
+ *      Si no hi ha un obstacle ni a davant ni a l'esquerra, realitzarà un gir a l'esquerra per anar a buscar una paret.
+ *
+ * Finalment s'actualitzen els moviments perquè es representi al simulador.
+ */
+
 void recorrerHabitacio() {
     uint8_t distanceWallLeft;
     uint8_t distanceWallCenter;
@@ -57,7 +71,7 @@ int main(void) {
     pthread_create(&tid, NULL, dyn_emu, (void *) datos_habitacion);
     pthread_create(&jid, NULL, joystick_emu, (void *) &jid);
 
-    /*
+
     //Testing some high level function
     printf("\nSetting LED to 0 \n");
     dyn_led_control(1, 0);
@@ -71,7 +85,6 @@ int main(void) {
     assert(tmp == 1);
     printf("\n************************\n");
     printf("Test passed successfully\n");
-    */
 
     printf("\nDimensiones habitacion %d ancho x %d largo mm2\n", ANCHO, LARGO);
     printf("En memoria: %I64u B = %I64u MiB\n", sizeof(datos_habitacion), sizeof(datos_habitacion) >> 20);
@@ -101,7 +114,9 @@ int main(void) {
                 case Up:
                     printf("Boton Up ('i') apretado\n");
                     // Boton a clicar para empezar el movimiento del robot.
+                    // Iniciamos el simulador de movimiento pasandole la habitación
                     init_movement_simulator(datos_habitacion);
+                    //Ejecutamos el método para que el robot recorra una habitación
                     recorrerHabitacio();
                     break;
                 case Down:

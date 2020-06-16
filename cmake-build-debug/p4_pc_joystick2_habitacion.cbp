@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="p4_pc_joystick2_habitacion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p4_pc_joystick2_habitacion">
+				<Option output="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/p4_pc_joystick2_habitacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/../../CLionProjects/ProjectePae"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/../ProjectePae"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/dyn"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/joystick_emu"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 p4_pc_joystick2_habitacion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p4_pc_joystick2_habitacion/fast">
+				<Option output="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/p4_pc_joystick2_habitacion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/../../CLionProjects/ProjectePae"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/../ProjectePae"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/dyn"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart"/>
+					<Add directory="/Users/xilmlr/CLionProjects/ProjectePae/joystick_emu"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 p4_pc_joystick2_habitacion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xilmlr/CLionProjects/ProjectePae/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_common.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_common.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_motor.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_motor.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_sensor.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_app_sensor.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_frames.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_frames.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_instr.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn/dyn_instr.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/b_queue.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/b_queue.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/dyn_emu.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/dyn_emu.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/movement_simulator.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/dyn_test/movement_simulator.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/habitacion_001.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart/fake_msp.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart/hal_dyn_uart_emu.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/hal_dyn_uart/hal_dyn_uart_emu.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/joystick_emu/joystick.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/joystick_emu/joystick.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/main.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/main.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/plot_movement.bat">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/plot_movement.py">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/posicion.c">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/posicion.h">
+			<Option target="p4_pc_joystick2_habitacion"/>
+		</Unit>
+		<Unit filename="/Users/xilmlr/CLionProjects/ProjectePae/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

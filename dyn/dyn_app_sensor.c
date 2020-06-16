@@ -13,7 +13,7 @@
 
 void distance_wall_front(uint8_t *distance) {
     // Funcio que retorna distancia a paret frontal mes propera. El funcionament es simple, llegim el byte del registre global DYN_REG__IR_CEMTER.
-    // Com a parametre només hem de passar el id del Mòdul Dynamixel del que volem llegir, que en aquest cas es 3. (Sensor)
+    // Com a parametre només hem de passar el id del Mòdul Dynamixel del que volem llegir, que en aquest cas es 3, el registre a llegir, i la variable que guardarà el valor que llegim. (Sensor)
     dyn_read_byte(0x03,DYN_REG__IR_CENTER, distance);
 }
 
