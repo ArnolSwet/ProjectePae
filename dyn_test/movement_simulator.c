@@ -187,6 +187,9 @@ void update_movement_simulator_values() {
         check_simulation_end();
 #endif
     }
+    if (robot_pos_str.y > 4000) {
+        end_simulator();
+    }
 }
 
 /** Verify if a collision happens at the new position
